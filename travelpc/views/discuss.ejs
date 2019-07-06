@@ -1,0 +1,56 @@
+<%- include ./common/header.ejs %>
+<!-- 头部 -->
+<div class="header">
+    <div class="logo">
+        <img src="/img/logot.png">
+    </div>
+    <div class="nav" id="nav">
+        <ul>
+            <li>
+                <a href="/home">首页</a>
+            </li>
+            <li>
+                <a href="/city">目的地</a>
+            </li>
+            <li>
+                <a href="/hotel">酒店</a>
+            </li>
+            <li>
+                <a href="/writdiscuss">游记</a>
+            </li>
+            <li>
+                <a href="/register">注册</a>
+            </li>
+            <li>
+                <a href="/login">登录</a>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="centen">
+    <div class="centen-mbx">
+        <h2>游记集</h2>
+    </div>
+    <div class="table-responsive">
+            <table class="table table-striped " >
+                <tbody>
+                   <% for(var i=0; i<arr.length;i++){ %>
+                   <tr>
+                       <td class="info"><%=arr[i].content%></td>
+                       <td><img src="<%=arr[i].pic%>"></td>
+                       <td class="publishtime"><%=moment(arr[i].publishAt).format('YYYY/MM/DD HH:mm:ss')%></td>
+                 
+                    <td class="chaoz">
+                        <a href="/handlediscuss/delet/<%=arr[i].id%>?img=<%=arr[i].pic%>" >删除</a>
+                    </td> 
+                </tr>
+                <% }%>
+                </tbody>
+            </table>
+    </div>
+
+</div>
+
+</body>
+<%- include ./common/fooder.ejs %>

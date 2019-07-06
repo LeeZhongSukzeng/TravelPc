@@ -1,0 +1,134 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+.seach{
+    position: absolute;
+    top: 37px;
+    left: 134px;
+}
+.seach input{
+        border: 1px solid #00848a;
+        width: 309px;
+        height: 40px;
+        border-radius: 3px;
+}
+.seach button{
+    height: 40px;
+    background: #00848a;
+    color: #ffff;
+    border-radius: 3px;
+    width: 50px;
+    text-align: center;
+    border: none;
+}
+.nav a{
+    color: #484848;
+}
+
+.table img{
+    width: 310px;
+    height: 218px;
+    margin-top: 24px;
+    margin-left: 24px;
+    border-radius: 4px;
+    
+}
+
+.nav li{
+    float: left;
+    list-style: none;
+    padding-left: 20px;
+}
+.nav ul li a{
+text-decoration: none;
+color:rgb(248, 80, 108);
+}
+.table{
+    width: 1163px;
+    background: #ffff;
+    margin-left: 112px;
+    position: absolute;
+    border-collapse: collapse;
+    margin-top: 74px;
+}
+.table .hotelname{
+    display: inline-block;
+    margin-left: 476px;
+    margin-top: -425px;
+}
+.table .hotelplace{
+    display: inline-block;
+    margin-left: 448px;
+    margin-top: -388px;
+    width: 254px;
+}
+.table .hotelplace img{
+    width: 20px;
+    height: 20px;
+    
+}
+.table .hotelinfo{
+    display: inline-block;
+    margin-left:-225px;
+    margin-top: -234px;
+    width: 300px;
+}
+.table .hotelmoney{
+    display: inline-block;
+    margin-left: 114px;
+    margin-top: -197px;
+}
+/* .table td{
+    border-bottom: 1px dotted #c4c0c0 
+   
+} */
+.table tr{
+    float: left;
+    border-bottom: 1px solid rgb(240, 239, 239);
+}
+.hotelname{
+    color: rgb(209, 223, 12);
+    font-size: 25px;
+    width: 321px;
+}
+.hotelmoney{
+    color: rgba(247, 50, 16, 0.877);
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 60px;
+}
+.hotelmoney img{
+    width: 40px;
+    height: 40px;
+}
+.hotelplace ,.hotelinfo{
+    font-size: 16px;
+}
+.hote-td{
+    width: 200px;
+    
+}
+
+.navsx{
+        
+        position: absolute;
+        top: 721px;
+        left: 498px;
+}
+.navsx ul li{
+    list-style: none;
+    float: left;
+}
+.navsx ul li a{
+    text-decoration: none;
+    color: rgb(209, 223, 12);
+}
+.navsx ul li a:hover{
+    color:  rgb(248, 80, 108);
+}
+
+
+
+

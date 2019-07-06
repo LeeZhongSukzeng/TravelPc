@@ -1,0 +1,15 @@
+.footer{
+    border-top: 1px dotted;
+    position: absolute;
+    top: 600px;
+    width: 1349px;
+   background: #ffff;
+}
+.footer-word{
+    margin-top: 28px;
+    margin-left: 314px;
+}
+.word-one a,.honour_wrap a{
+    text-decoration: none;
+    color: #6c6c6c;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/discuss.css">
+    <link rel="stylesheet" href="/stylesheets/rest.css">
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="/img/logot.png">
+        </div>
+        <div class="nav" id="nav">
+            <ul>
+                <li>
+                    <a href="/home">首页</a>
+                </li>
+                <li>
+                    <a href="/city">目的地</a>
+                </li>
+                <li>
+                    <a href="/hotel">酒店</a>
+                </li>
+                <li>
+                    <a href="/writdiscuss">游记</a>
+                </li>
+                <li>
+                    <a href="/register">注册</a>
+                </li>
+                <li>
+                    <a href="/login">登录</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="centent">
+        <div class="centimg">
+            <img src="/img/plbg.png">
+        </div>
+        <div class="mypic">
+            <img src="/img/wode.png">
+        </div>
+        <div class="centtitle">
+            <h1>分享您对旅游的热爱</h1>
+        </div>
+
+        <div class="plcentent">
+                <div class="pl-body">
+                    <form action="http://localhost:8081/writdiscuss" method="post" enctype="multipart/form-data">
+                        <ul>
+                            <li>
+                                <textarea name="content" id="" cols="60" rows="8" placeholder="写下旅游经历吧"></textarea>
+                            </li>
+                            <li> 图片: <input type="file" name="pic" /></li>
+                            <li>
+                                <br />
+                                <button type="submit" class="btn btn-default">提交</button>
+                            </li>
+            
+                        </ul>
+                    </form>
+            
+                </div>
+            </div>
+    </div>
+</body>
+
+</html>

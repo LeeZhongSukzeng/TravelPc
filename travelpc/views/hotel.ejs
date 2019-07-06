@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/hotel.css">
+    <link rel="stylesheet" href="/stylesheets/header.css">
+</head>
+<body>
+    <div class="seach-header">
+        <div class="header">
+            <div class="logo">
+                <img src="/img/logot.png">
+            </div>
+            <div class="nav" id="nav">
+                <ul>
+                    <li>
+                        <a href="/home">首页</a>
+                    </li>
+                    <li>
+                        <a href="/city">目的地</a>
+                    </li>
+                    <li>
+                        <a href="/hotel">酒店</a>
+                    </li>
+                    <li>
+                        <a href="/writdiscuss">游记</a>
+                    </li>
+                    <li>
+                        <a href="/register">注册</a>
+                    </li>
+                    <li>
+                        <a href="/login">登录</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="seach">
+            <form role="form" class="form-inline" method="GET" action="http://localhost:8081/hotel"
+            enctype="application/x-www-form-urlencoded"> 
+              
+            <input type="text" class=""  id="name" name="title" placeholder="请输入酒店/景点名称名称">
+            <button type="submit">搜索</button>
+            <!-- </a> -->
+           
+         </form> 
+    </div>
+
+    </div>
+
+    <div class="seach-centent">
+       
+
+        <table class="table" cellspacing="0">
+            <tbody>
+                <% for(var i=0; i<hotel.length;i++){ %>
+                <tr>
+                    <td><img src="<%=hotel[i].hotelImg%>"></td>
+                    <td class="hotelname"><%=hotel[i].hotelName%></td>
+                    <td class="hote-td hotelplace">
+                        <img src="/img/ditu.png"> <%=hotel[i].hotelPlace%></td>
+                    <td class="hote-td hotelinfo"><%=hotel[i].hotelInfo%></td>
+                    <td class="hote-td hotelmoney">
+                        <img src="/img/rmb.png">
+                        ￥<%=hotel[i].hotelMoney%>
+                    </td>
+                </tr>
+                <% }%>
+            </tbody>
+        </table>
+        <div class="navsx">
+            <ul>
+                <li>
+                    <a href="/hotel/?page=<%=page-1%>">上一页</a>
+                </li>
+                <li>
+                    一共<%=count%>条数据 当前第<%=page%>页 一共<%=pages%>页
+                </li>
+                <li>
+                    <a href="/hotel/?page=<%=page+1%>">下一页</a>
+                </li>
+            </ul>
+        </div>
+       
+
+    </div>
+</body>
+<script src="/javascripts/common.js"></script>
+</html>

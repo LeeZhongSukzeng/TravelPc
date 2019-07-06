@@ -1,0 +1,27 @@
+{
+    "breakfast_menu": {
+        "scenic": [{
+                "name": "八达岭长城",
+                "price": "￥40",
+                "description": "不到长城非好汉",
+                "img": ""
+            },
+            {
+                "name": "颐和园",
+                "price": "￥30",
+                "description": "不到长城非好汉",
+                "img": ""
+            },{
+                "name": "圆明园",
+                "price": "￥25",
+                "description": "不到长城非好汉",
+                "img": ""
+            },{
+                "name": "八达岭长城",
+                "price": "￥40起",
+                "description": "不到长城非好汉",
+                "img": ""
+            }
+        ]
+    }
+}

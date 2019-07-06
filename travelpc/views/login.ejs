@@ -1,0 +1,35 @@
+<%- include ./common/header.ejs %>
+<div class="register-top">
+        <div class="title">
+            <h1>欢迎登录</h1>
+        </div>
+    </div>
+    <div class="register-centen">
+        <div class="register-bg">
+            <img src="/images/register_bg.jpg">
+        </div>
+        <div class="register-line">
+            <img src="/images/register-decoration.png">
+        </div>
+        <div class="register-form">
+            <div class="zhzc">
+                <span>账号登录</span>
+            </div>
+            <form class="formbody"  method="POST" action="http://localhost:8081/login">
+                <div class="name" style="font-size: 22px;">
+                    昵称：
+                    <input type="text" name="username" class="myinput"  placeholder="请输入昵称"  maxlength="20" minlength="4" id="username" title="0">
+                </div>
+                <div class="password" style="font-size: 22px;">
+                    密码：
+                    <input type="password" name="password" class="myinput"  placeholder="请输入密码"  maxlength="20" minlength="6" id="pwd" title="1">
+                </div>
+                <div class="tj" style="margin-top: 22px;margin-left: 154px;">
+                    <button class="tjbut">登录</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+<script src="/javascripts/login.js"></script>
+</html>

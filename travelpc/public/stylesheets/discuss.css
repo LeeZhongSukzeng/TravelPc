@@ -1,0 +1,125 @@
+.logo{
+    border-bottom: 1px solid #c2bfbf;
+}
+.logo img{
+    width: 80px;
+    height: 80px;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+ .nav{
+margin-left: 869px;
+margin-top: -67px;
+}
+.nav ul li{
+    list-style: none;
+    padding-left: 30px;
+    float: left;
+}
+.nav ul li a{
+    text-decoration: none;
+    color: #484848;
+    font-size: 20px;
+}
+
+.centent{
+margin-top: 77px;
+}
+
+.centimg img{
+    width: 100%;
+    height: 300px;
+}
+.mypic{
+    position: absolute;
+    top: 140px;
+    left: 590px;
+}
+.mypic img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border:1px solid #ffff;
+}
+.centtitle{
+    position: absolute;
+    top: 250px;
+    left: 510px;
+}
+.centtitle h1{
+    color: #ffff;
+    font-size: 27px;
+}
+
+.plcentent{
+    border: 1px solid #c2bfbf;
+    width: 794px;
+    height: 300px;
+    position: absolute;
+    top: 325px;
+    left: 258px;
+}
+.plcentent ul li{
+    list-style: none;
+}
+.plcentent textarea{
+    width: 794px;
+    height: 200px;
+    font-size: 18px;
+    color: #484848;
+}
+.plcentent button{
+    background: rgb(80, 185, 185);
+    width: 60px;
+    height: 40px;
+    border-radius: 4px;
+    margin-left: 358px;
+    border: none;
+    color: #ffff;
+    font-size: 18px;
+}
+
+
+/* 评论列表 */
+.centen .centen-mbx{
+    font-size: 24px;
+    position: absolute;
+    top: 136px;
+    left: 97px;
+}
+.table{
+    position: absolute;
+    top: 252px;
+    left: -148px;
+    width: 800px;
+}
+.table td{
+    padding-left:246px;
+   
+}
+.table td img{
+ width: 100px;
+ height:100px;
+}
+.table .info{
+   font-size: 20px;
+ color: #484848;
+}
+.table .publishtime{
+    font-size: 18px;
+ color: #8a8a8a;
+}
+
+.chaoz a{
+    text-decoration: none;
+    color: #484848;
+    /* height: 73px; */
+    background: red;
+    display: inline-block;
+    height: 30px;
+    width: 57px;
+    border-radius: 4px;
+    text-align: center;
+    color: #ffff;
+    font-size: 17px;
+}

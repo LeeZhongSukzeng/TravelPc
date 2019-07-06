@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="/stylesheets/me.css">
+    <link rel="stylesheet" href="/stylesheets/header.css">
+    
+</head>
+
+<body>
+    <!-- 头部 -->
+    <div class="header">
+            <div class="logo">
+                <img src="/img/logot.png">
+            </div>
+            <div class="nav" id="nav">
+                <ul>
+                    <li>
+                        <a href="/home">首页</a>
+                    </li>
+                    <li>
+                        <a href="/city">目的地</a>
+                    </li>
+                    <li>
+                        <a href="/hotel">酒店</a>
+                    </li>
+                    <li>
+                        <a href="/writdiscuss">游记</a>
+                    </li>
+                    <li>
+                        <a href="/register">注册</a>
+                    </li>
+                    <li>
+                        <a href="/login">登录</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    
+
+    <div class="me-nav" id="metitle">
+        <ul>
+            <li title="0" class="menow"><a href="" >个人信息</a></li>
+            <li title="1"><a href="">个人信息完善</a></li>
+            <li title="2"><a href="">个人信息修改</a></li>
+        </ul>
+    </div>
+
+    <div class="me-centent  me-tab" id="" style="display: block;">
+        <div class="me-cent">
+            <% for(var i=0; i<my.length;i++){ %>
+            <div class="me-img">
+                <img src="<%=my[i].pic%>">
+            </div>
+            <div class="me-mess">
+                <div class="me-name">
+                    <span>昵称: <%=my[i].usname%></span>
+                </div>
+
+                <div class="me-birthday">
+                    <span>生日: <%=my[i].usbrithday%></span>
+                </div>
+                <div class="me-sex">
+                    <span>性别：<%=my[i].ussex%></span>
+                </div>
+            </div>
+            <a href="/my/rewrit/<%=my[i].id%>" class="rewrit">修改</a>
+            <% }%>
+        </div>
+        <div class="me-right">
+            <span>浏览记录</span>
+            <div class="lljl">
+                <img src="/images/lsjl.png">
+            </div>
+        </div>
+    </div>
+
+
+    <div class="rewritme-centent  me-tab" id="" style="display: none;">
+        <form action="http://localhost:8081/my" method="POST" enctype="multipart/form-data" id="form">
+            <div class="rewritme-cent">
+                <span>只能修改一次请想好后在提交</span>
+                <div class="rewritme-img">
+                    <span>上传头像</span>
+                    <input type="file" name="pic" id="">
+
+                </div>
+                <div class="rewritme-mess">
+                    
+                    <div class="rewritme-name">
+                        <span>昵称：</span>
+                        <input type="text" name="usname">
+                    </div>
+                    <div class="rewritme-birthday">
+                        <span>生日：</span>
+                        <input type="text" name="usbrithday">
+                    </div>
+                    <div class="rewritme-sex">
+                        <span>性别：</span>
+                        <select name="ussex" id="">
+                            <option value="boy">男</option>
+                            <option value="girl">女</option>
+                        </select>
+                    </div>
+                    <div class="rewritme-btn">
+                        <button id="bc">保存</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div class="rewritme-right">
+            <span>浏览记录</span>
+            <div class="lljl">
+                <img src="/images/lsjl.png">
+            </div>
+        </div>
+    </div>
+
+    <div class="rewritme-centent  me-tab" style="display: none;">
+        <form action="http://localhost:8081/my/rewrit/<%=my.id%>" method="POST" enctype="multipart/form-data">
+            <div class="rewritme-cent">
+               
+                <div class="rewritme-img">
+                        <img src="<%=my.pic%>" style="position:absolute;left: 126px; top:156px; ">
+                    <span>上传头像</span>
+                    <input type="file" name="pic" id="">
+
+                </div>
+                <div class="rewritme-mess">
+                    
+                    <div class="rewritme-name">
+                        <span>昵称：</span>
+                        <input type="text" name="usname" value=" <%=my.usname%>">
+                    </div>
+                    <div class="rewritme-birthday">
+                        <span>生日：</span>
+                        <input type="text" name="usbrithday"  value=" <%=my.usbrithday%>">
+                    </div>
+                    <div class="rewritme-sex">
+                        <span>性别：</span>
+                        <select name="ussex" id=""  value=" <%=my.ussex%>">
+                            <option value="boy">男</option>
+                            <option value="girl">女</option>
+                        </select>
+                    </div>
+                    <div class="rewritme-btn">
+                        <button id="bc">保存</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div class="rewritme-right">
+            <span>浏览记录</span>
+            <div class="lljl">
+                <img src="/images/lsjl.png">
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="/javascripts/me.js"></script>
+<script src="/javascripts/common.js"></script>
+</html>

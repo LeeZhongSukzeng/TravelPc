@@ -1,0 +1,23 @@
+.logo{
+    border-bottom: 1px solid #c2bfbf;
+}
+.logo img{
+    width: 80px;
+    height: 80px;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+ .nav{
+margin-left: 869px;
+margin-top: -67px;
+}
+.nav ul li{
+    list-style: none;
+    padding-left: 30px;
+    float: left;
+}
+.nav ul li a{
+    text-decoration: none;
+    color: #484848;
+    font-size: 20px;
+}
